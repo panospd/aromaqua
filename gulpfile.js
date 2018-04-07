@@ -23,7 +23,7 @@ gulp.task('js', function(){
 
 gulp.task('serve',['sass'],function(){
   browserSync.init({
-    server: "./src"
+    server: ""
   });
   gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss','src/scss/*.scss'],['sass']);
   gulp.watch("src/*.html").on('change',browserSync.reload);
